@@ -4,7 +4,7 @@ const Data = () => {
 return (
     <div className="home__data">
         <h1 className="home__title">
-            Arun Pandey Laudari 
+            Arun Laudari 
             <svg
                   width="36"
                   height="36"
@@ -58,9 +58,8 @@ return (
 
         <h3 className="home__subtitle">Full Stack Developer</h3>
         <p className="home__description">I am a Full Stack Developer with a passion for web development. I am currently working on my own projects and looking for opportunities to work with other developers.</p>
-        <a href="#contact" className="button button--flex">
-            Say Hello
-            <svg
+        <a href="#contact" className="button button--flex">Say Hello
+        <svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -77,6 +76,7 @@ return (
                     fill="var(--container-color)"
                   ></path>
                 </svg>
+  
         </a>
     </div>
 );
