@@ -1,5 +1,6 @@
 import React from 'react'
-import { HiOutlineDownload } from "react-icons/hi";
+
+import { LuMessageCircleCode } from "react-icons/lu";
 
 const Data = () => {
 return (
@@ -59,8 +60,9 @@ return (
 
     <h3 className="home__subtitle">Full Stack Developer</h3>
     <p className="home__description">I am a Full Stack Developer with a passion for web development. I am currently working on my own projects and looking for opportunities to work with other developers.</p>
-    <a href="index.pdf" download className="button button--flex">Download CV
-      <HiOutlineDownload className="button__icon" />
+    <a href="#"  className="button button--flex">
+     Let's Connect
+    <LuMessageCircleCode className="button__icon" />
     </a>
   </div>
 );
