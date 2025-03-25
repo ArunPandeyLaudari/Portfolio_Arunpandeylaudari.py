@@ -1,0 +1,80 @@
+/* Section Title */
+.section__title {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-bottom: var(--mb-2); /* Added spacing for better layout */
+}
+
+
+
+/* About Container */
+.about__container {
+    display: grid; /* Ensure grid layout is explicitly defined */
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+    row-gap: 2rem; /* Added row gap for better spacing */
+    padding: 2rem; /* Added padding for better layout */
+}
+
+/* About Image */
+.about__img {
+    width: 100%; /* Make it responsive */
+    max-width: 350px; /* Maintain original size limit */
+    border-radius: 1.5rem;
+    justify-self: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added subtle shadow for better aesthetics */
+}
+
+/* About Info */
+.about__info {
+    display: grid; /* Ensure grid layout is explicitly defined */
+    grid-template-columns: repeat(3, 140px);
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+/* About Box */
+.about__box {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added hover effect */
+}
+
+.about__box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+/* About Icon */
+.about__icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: 0.5rem; /* Added spacing below the icon */
+}
+
+/* About Title */
+.about__title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0.25rem; /* Added spacing below the title */
+}
+
+/* About Subtitle */
+.about__subtitle {
+    font-size: var(--tiny-font-size);
+    color: var(--text-color-light); /* Added color for better contrast */
+}
+
+/* About Description */
+.about__description {
+    padding: 0 0.5rem 0 0;
+    margin-bottom: var(--mb-2-5);
+    text-align: justify;
+    line-height: 1.6; /* Improved readability */
+    color: var(--text-color); /* Added color for better contrast */
+}
