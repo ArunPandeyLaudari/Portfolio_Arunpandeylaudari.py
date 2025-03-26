@@ -20,8 +20,9 @@
 .nav__logo,
 .nav__toggle {
     color: var(--title-color);
-    font-weight: var(--font-medium);
-    font-size: large;
+    font-weight: 550;
+    font-size: x-large;
+   
 }
 
 .nav__list {

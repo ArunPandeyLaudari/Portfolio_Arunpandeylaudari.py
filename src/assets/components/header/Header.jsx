@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import './Header.css';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export const Header = () => {
 /* Toggle Menu */
@@ -60,8 +61,9 @@ export const Header = () => {
                 </div>
 
                 <div className="nav__toggle" onClick={()=>showMenu(!Toggle)}>
-                    <i className="uil uil-apps"></i>
-                </div>
+                   
+                   <GiHamburgerMenu/>
+                                   </div>
             </nav>
 
         </header>
