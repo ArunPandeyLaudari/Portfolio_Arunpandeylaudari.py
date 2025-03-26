@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaAngular } from "react-icons/fa";
 
 export const Header = () => {
 /* Toggle Menu */
@@ -12,7 +13,11 @@ export const Header = () => {
 
             <nav className="nav container">
 
-                <a href="index.html" className="nav__logo">Arun.py</a>
+                <a href="index.html" className="nav__logo">
+                    
+                <FaAngular  />
+                    
+                </a>
 
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">

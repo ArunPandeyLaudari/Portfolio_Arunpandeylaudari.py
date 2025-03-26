@@ -19,10 +19,12 @@
 
 .nav__logo,
 .nav__toggle {
+    margin-top: 1rem;
     color: var(--title-color);
     font-weight: 550;
-    font-size: x-large;
-   
+    font-size: var(--h1-font-size);
+    cursor: pointer;
+
 }
 
 .nav__list {
@@ -34,7 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: large;
+    font-size: medium;
     color: var(--title-color);
     font-weight: var(--font-medium);
     transition: 0.3s ease-in-out;
