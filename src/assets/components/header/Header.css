@@ -21,6 +21,7 @@
 .nav__toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
+    font-size: large;
 }
 
 .nav__list {
@@ -32,7 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--small-font-size);
+    font-size: large;
     color: var(--title-color);
     font-weight: var(--font-medium);
     transition: 0.3s ease-in-out;
@@ -66,8 +67,8 @@
 /* Mobile navigation (768px and below) */
 @media screen and (max-width: 768px) {
     .header {
-        top: initial;
-        bottom: 0;
+        top: 0;
+        
     }
 
     .nav {
