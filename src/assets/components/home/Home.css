@@ -100,6 +100,7 @@
 
 .home__scroll{
     margin-left: 9.25rem;
+   
 
 }
 
@@ -118,15 +119,16 @@
 }
 
 .home__scroll-name{
-    color: var(--title-color);
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
     margin-left: 2px;
+    color:rgb(177, 170, 170);
+
 }
 
 .home__scroll-arrow{
     font-size: 1.25rem;
-    color: var(--title-color);
+    color:rgb(177, 170, 170);
 }
 
 
