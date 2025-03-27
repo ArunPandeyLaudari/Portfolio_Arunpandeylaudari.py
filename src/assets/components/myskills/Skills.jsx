@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Frontend from './Frontend';
+import Backend from './Backend';
 
-import './Skills.css'
+import AppDev from './AppDev';
+import OtherSkill from './OtherSkill';
 
-import Backend from './Backend'
-import Frontend from './Frontend'
+import './Skills.css';
 
 const Skills = () => {
     return (
@@ -13,8 +15,10 @@ const Skills = () => {
             </h2>
 
             <div className="skills__container container grid">
-                <Frontend />
-                <Backend />
+              <Frontend />
+              <Backend />
+              <AppDev />
+              <OtherSkill/>
             </div>
         </section>
     )
