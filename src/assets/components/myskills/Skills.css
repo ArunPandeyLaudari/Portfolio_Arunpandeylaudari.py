@@ -1,35 +1,105 @@
-.skills__container{
-    grid-template-columns: repeat(2,450px);
-    
-    column-gap: 3rem;
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     justify-content: center;
+    padding: 2rem;
 }
 
-
-.skills__content{
+.skills__content {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2rem 4rem;
+    padding: 2rem;
     border-radius: 1.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
 }
 
-.skills__title{
+.skills__content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.skills__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     text-align: center;
     margin-bottom: var(--mb-1-5);
+    color: var(--title-color);
 }
 
-.skills__box{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   justify-content: center;
-   column-gap: 2.5rem;
+.skills__box {
+    display: flex;
+    justify-content: center;
+    column-gap:2.5rem ;
 }
 
-.skills__group{
+.skills__group {
     display: grid;
+    grid-template-columns: repeat(1, 1fr);
     align-items: flex-start;
     row-gap: 1rem;
 
+}
+
+.skills__data {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skills .skills__icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.skills .skills__icon:hover {
+    color: var(--accent-color);
+}
+
+.skills__name {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+    color: var(--text-color);
+}
+
+.skills__level {
+    font-size: var(--tiny-font-size);
+    color: var(--text-light-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills__container {
+        padding: 1rem;
+    }
+
+    .skills__content {
+        padding: 1.5rem;
+    }
+
+    .skills__box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills__title {
+        font-size: calc(var(--normal-font-size) - 2px);
+    }
+
+    .skills__content {
+        padding: 1rem;
+    }
+
+    .skills__name {
+        font-size: calc(var(--small-font-size) - 2px);
+    }
+
+    .skills__level {
+        font-size: calc(var(--tiny-font-size) - 1px);
+    }
 }
