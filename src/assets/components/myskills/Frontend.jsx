@@ -1,92 +1,42 @@
-// import React from 'react';
-import { LuBadgeCheck } from "react-icons/lu";
+import React from 'react';
+import { FaReact } from "react-icons/fa";
+import { SiAlpinedotjs } from "react-icons/si";
+import { FaJs } from "react-icons/fa";
+import { SiVite } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa6";
+import { SiChartdotjs } from "react-icons/si";
+
+import './Skills.css';
 
 const Frontend = () => {
-  return (
-    <div className="skills__content">
-                     <h3 className="skills__title">
-                         Frontend Skills
-                     </h3>
-                         <div className="skills__box">
-                             <div className="skills__group">
-                                 <div className="skills__data">
-                                     <LuBadgeCheck className="skills__icon" />
-                                     <div>
-                                         <h3 className="skills__name">HTML 5</h3>
-                                         <span className="skills__level">Advance</span>
-                                     </div>
-                                 </div>
-     
-                                 <div className="skills__data">
-                                     <LuBadgeCheck className="skills__icon" />
-                                     <div>
-                                         <h3 className="skills__name">CSS</h3>
-                                         <span className="skills__level">Intermediate</span>
-                                     </div>
-                                 </div>
-     
-                                 <div className="skills__data">
-                                     <LuBadgeCheck className="skills__icon" />
-                                     <div>
-                                         <h3 className="skills__name">Tailwind CSS</h3>
-                                         <span className="skills__level">Intermediate</span>
-                                     </div>
-                                 </div>
-     
-                                 <div className="skills__data">
-                                     <LuBadgeCheck className="skills__icon" />
-                                     <div>
-                                         <h3 className="skills__name">Bootstrap CSS</h3>
-                                         <span className="skills__level">Intermediate</span>
-                                     </div>
-                                 </div>
-     
-                                 <div className="skills__data">
-                                     <LuBadgeCheck className="skills__icon" />
-                                     <div>
-                                         <h3 className="skills__name">Javascript</h3>
-                                         <span className="skills__level">Intermediate</span>
-                                     </div>
-                                 </div>
-     
-                                 <div className="skills__data">
-                                     <LuBadgeCheck className="skills__icon" />
-                                     <div>
-                                         <h3 className="skills__name">React JS</h3>
-                                         <span className="skills__level">Intermediate</span>
-                                     </div>
-                                 </div>
-                             </div>
-                             <div className="skills__group">
-                                 <div className="skills__data">
-                                     <LuBadgeCheck className="skills__icon" />
-                                     <div>
-                                         <h3 className="skills__name">Alpine JS</h3>
-                                         <span className="skills__level">Intermediate</span>
-                                     </div>
-                                 </div>
+    return (
+        <div className="skills_content" id="skills">
 
-                                 <div className="skills__data">
-                                     <LuBadgeCheck className="skills__icon" />
-                                     <div>
-                                         <h3 className="skills__name">Swiper JS</h3>
-                                         <span className="skills__level">Intermediate</span>
-                                     </div>
-                                 </div>
+            
+            <span className="skills__tittle">Frontend Skills</span>
 
-                                 <div className="skills__data">
-                                     <LuBadgeCheck className="skills__icon" />
-                                     <div>
-                                         <h3 className="skills__name">Charts JS</h3>
-                                         <span className="skills__level">Intermediate</span>
-                                     </div>
-                                 </div>
+            <div className="skills__container container grid">
 
-                               </div>
-                         </div>
-                    </div>
-    
-  )
+                <FaReact className='skills__icon'/>
+                <SiAlpinedotjs className='skills__icon'/>
+                <SiChartdotjs className='skills__icon'/>
+                <FaJs className='skills__icon'/>
+                <SiVite className='skills__icon'/>
+                <SiTailwindcss className='skills__icon'/>
+                <FaBootstrap className='skills__icon'/>
+                <FaHtml5 className='skills__icon'/>
+                <FaCss3Alt className='skills__icon'/>
+              
+
+                
+
+            </div>
+
+        </div>
+    )
 }
 
-export default Frontend;
+export default Frontend

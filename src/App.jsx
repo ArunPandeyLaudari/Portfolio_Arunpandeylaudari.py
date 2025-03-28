@@ -4,7 +4,8 @@ import {Header} from './assets/components/header/Header';
 import {Home} from './assets/components/home/Home';
 import About from './assets/components/about/About';
 import Skills from './assets/components/myskills/Skills';
-
+import Service from './assets/components/services/Service';
+import Qualification from './assets/components/qualification/Qualification';
 
 
 
@@ -18,6 +19,8 @@ import Skills from './assets/components/myskills/Skills';
     <Home/>
     <About/>
     <Skills/>
+    <Service/>
+    <Qualification/>
    </main>
     
     </>

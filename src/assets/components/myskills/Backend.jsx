@@ -1,78 +1,37 @@
-import { LuBadgeCheck } from "react-icons/lu";
+import React from 'react';
+import { SiPhp } from "react-icons/si";
+import { SiLaravel } from "react-icons/si";
+import { SiPython } from "react-icons/si";
+import { SiFlask } from "react-icons/si";
+import { SiDjango } from "react-icons/si";
+import { SiXampp } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { SiPhpmyadmin } from "react-icons/si";
+import { SiWordpress } from "react-icons/si";
+
 
 const Backend = () => {
   return (
-    <div className="skills__content">
-      <h3 className="skills__title">Backend Skills</h3>
-      <div className="skills__box">
-        <div className="skills__group">
-          <div className="skills__data">
-            <LuBadgeCheck className="skills__icon" />
-            <div>
-              <h3 className="skills__name">PHP</h3>
-              <span className="skills__level">Advance</span>
-            </div>
-          </div>
+    <div className="skills_content" id="skills">
+   
+               <span className="skills__tittle">Backend Skills</span>
+   
+               <div className="skills__container container grid">
+   
+                   <SiPhp className='skills__icon'/>
+                  <SiWordpress className='skills__icon'/>
+                   <SiLaravel className='skills__icon'/>
+                   <SiPython className='skills__icon'/>
+                   <SiFlask className='skills__icon'/>
+                   <SiDjango className='skills__icon'/>
+                   <SiXampp className='skills__icon'/>
+                   <SiMysql className='skills__icon'/>
+                   <SiPhpmyadmin className='skills__icon'/>
+   
+               </div>
+   
+           </div>
+  )
+}
 
-          <div className="skills__data">
-            <LuBadgeCheck className="skills__icon" />
-            <div>
-              <h3 className="skills__name">Laravel</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <LuBadgeCheck className="skills__icon" />
-            <div>
-              <h3 className="skills__name">Python</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <LuBadgeCheck className="skills__icon" />
-            <div>
-              <h3 className="skills__name">Flask</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <LuBadgeCheck className="skills__icon" />
-            <div>
-              <h3 className="skills__name">Django</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-
-        
-          <div className="skills__data">
-            <LuBadgeCheck className="skills__icon" />
-            <div>
-              <h3 className="skills__name">C#</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-          <div className="skills__data">
-            <LuBadgeCheck className="skills__icon" />
-            <div>
-              <h3 className="skills__name">.Net</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-
-          <div className="skills__data">
-            <LuBadgeCheck className="skills__icon" />
-            <div>
-              <h3 className="skills__name">MySQL</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Backend;
+export default Backend
