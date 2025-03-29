@@ -54,7 +54,7 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                             <div>
-                                <h3 className="qualification__title">High School (+2)</h3>
+                                <h3 className="qualification__title">School Leaving Certificate(SLC)(+2)</h3>
                                 <a href=""> <span className="qualification__subtitle">Aroma College</span></a>
                                 <div className="qualification__calendar">
                                     <i className="uil uil-calendar-alt"></i> 2019 - 2021
