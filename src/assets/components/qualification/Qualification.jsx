@@ -5,7 +5,7 @@ const Qualification = () => {
     const [activeTab, setActiveTab] = useState("education");
 
     return (
-        <section className="qualification-section" id="qualification">
+        <section className="qualification-section" id="portfolio">
             <h2 className="section__title">My Qualifications</h2>
             <div className="qualification-container container">
                 <div className="qualification__tabs">

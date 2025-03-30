@@ -5,6 +5,8 @@ import { SiAndroidstudio } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
 
+
+
 const AppDev = () => {
   return (
     <div className="skills_content" id="skills">
@@ -17,6 +19,8 @@ const AppDev = () => {
         <SiFlutter className='skills__icon'/>
         <SiAndroidstudio className='skills__icon'/>
         <FaJava className='skills__icon'/>
+      
+
    
       </div>
    

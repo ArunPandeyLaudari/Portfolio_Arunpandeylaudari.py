@@ -1,98 +1,154 @@
+/* Skills Section CSS */
+
 .skills__contain {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    gap: 1.5rem;
     margin-top: 2rem;
     justify-content: center;
-    align-items: center;
-}
-
-.skills_content {
+    align-items: start; /* Changed from center for better alignment */
+  }
+  
+  .skills_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--container-color);
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.75rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skills_content:hover {
+    height: 100%; /* Ensure consistent height */
+  }
+  
+  .skills_content:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-}
-
-.skills__tittle {
+  }
+  
+  .skills__tittle {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     color: var(--title-color);
-}
-
-.skills__icon {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .skills__icon {
     font-size: 1.5rem;
     color: var(--title-color);
     margin-bottom: 1rem;
-}
-
-.skills__container {
+    transition: color 0.3s ease;
+  }
+  
+  .skills__container {
     display: grid;
-    margin-top: 1.5rem;
     grid-template-columns: repeat(5, 1fr);
-    height: 100px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) { /* Tablet */
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  /* Large Desktops (1200px and up) */
+  @media screen and (min-width: 1200px) {
     .skills__contain {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .skills__icon {
-        font-size: 1.55rem;
-    }
-}
-
-@media (max-width: 650px) { /* Mobile */
-    .skills__contain {
-        grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
     }
     
     .skills__container {
-        grid-template-columns: repeat(6, 1fr);
-        
+      grid-template-columns: repeat(5, 1fr);
     }
-
-    .skills__icon {
-        font-size: 1.8rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .skills__icon {
-        font-size: 1.8rem;
-    }
-
-    .skills__container {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
+  }
+  
+  /* Regular Desktops and Laptops (992px to 1199px) */
+  @media screen and (max-width: 1199px) and (min-width: 992px) {
     .skills__contain {
-        grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
     }
-
+    
+    .skills__container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  /* Tablets and Small Laptops (768px to 991px) */
+  @media screen and (max-width: 991px) and (min-width: 768px) {
+    .skills__contain {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+    
+    .skills__container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    
     .skills__icon {
-        font-size: 1.8rem;
+      font-size: 1.55rem;
     }
-
+  }
+  
+  /* Large Mobile to Small Tablet (576px to 767px) */
+  @media screen and (max-width: 767px) and (min-width: 576px) {
+    .skills__contain {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    
+    .skills__container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .skills_content {
+      padding: 1.25rem;
+    }
+    
+    .skills__icon {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Mobile Devices (575px and below) */
+  @media screen and (max-width: 575px) {
+    .skills__contain {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .skills__container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
+    
+    .skills_content {
+      padding: 1.25rem;
+    }
+    
+    .skills__icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+    }
+    
     .skills__tittle {
-        font-size: 1rem;
+      font-size: 1rem;
+      margin-bottom: 0.9rem;
     }
-
-
+  }
+  
+  /* Small Mobile Devices (375px and below) */
+  @media screen and (max-width: 375px) {
+    .skills__container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
     
-    
-    
-}
+    .skills_content {
+      padding: 1rem;
+    }
+  }

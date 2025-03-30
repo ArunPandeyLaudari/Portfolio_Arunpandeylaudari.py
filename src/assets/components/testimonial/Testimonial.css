@@ -1,89 +1,185 @@
-.testimonial-section {
-    padding: 40px 20px;
-    background-color: #f8fdfb;
-    text-align: center;
-  }
+/* Testimonials.css */
+
+.testimonials-section {
+  margin-top: 1.2rem;
+  padding: 4rem 1rem;
   
-  .testimonial-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .testimonial-swiper {
-    padding-bottom: 40px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+
+
+.testimonial-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  height: 200px; /* Fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.client-image-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--text-color);
+  flex-shrink: 0;
+}
+
+.client-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-info {
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.client-name {
+  font-size: .9rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.client-position {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.client-rating {
+  font-size: 0.8rem;
+}
+
+.star {
+  margin-right: 2px;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star.empty {
+  color: #e0e0e0;
+}
+
+.testimonial-content {
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent text overflow */
+}
+
+.testimonial-text {
+  font-size: 0.68rem;
+  line-height: 1.35;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+  flex-grow: 1;
+  color: #555;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Limit to approximately 6 lines */
+  line-clamp: 6; /* Standard property for compatibility */
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.testimonial-date {
+  font-size: 0.65rem;
+  color: var(--text-color); 
+  font-weight: 500;
+  text-align: right;
+  margin-top: auto; /* Push date to bottom */
+}
+
+/* Swiper custom styles */
+.testimonials-swiper {
+  padding-bottom: 45px;
+}
+
+.swiper-pagination-bullet {
+  background: var(--text-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 1.8rem;
   }
   
   .testimonial-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
-    max-width: 320px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    border: 1px solid #ddd;
-    transition: transform 0.3s ease;
+    padding: 1.2rem;
+    height: 260px; /* Slightly smaller height for tablets */
   }
   
-  .testimonial-card:hover {
-    transform: translateY(-5px);
+  .client-image-container {
+    width: 50px;
+    height: 50px;
   }
   
-  .rating {
-    color: #ffbb33;
-    font-size: 1.2rem;
+  .testimonial-text {
+    -webkit-line-clamp: 5; /* Fewer lines on smaller screens */
+    line-clamp: 5; /* Standard property for compatibility */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-section {
+    padding: 2.5rem 0.75rem;
   }
   
-  .feedback {
-    font-size: 1rem;
-    margin: 10px 0;
-    color: #333;
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
   
-  .user-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 15px;
+  .testimonial-card {
+    padding: 1rem;
+    height: 240px; /* Even smaller height for mobile */
   }
   
-  .user-info img {
+  .client-image-container {
     width: 45px;
     height: 45px;
-    border-radius: 50%;
   }
   
-  .user-name {
-    font-weight: bold;
-    color: #0073e6;
+  .client-name {
+    font-size: 1rem;
   }
   
-  .user-role {
+  .client-rating {
+    font-size: 0.8rem;
+  }
+  
+  .testimonial-text {
     font-size: 0.85rem;
-    color: #666;
+    -webkit-line-clamp: 4; /* Even fewer lines on mobile */
+    line-clamp: 4; /* Standard property for compatibility */
   }
   
-  .swiper-pagination-bullet {
-    background: #0073e6;
+  .testimonial-date {
+    font-size: 0.7rem;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .testimonial-card {
-      max-width: 90%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .testimonial-card {
-      max-width: 95%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .testimonial-title {
-      font-size: 1.5rem;
-    }
-  }
-  
+}

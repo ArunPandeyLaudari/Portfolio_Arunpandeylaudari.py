@@ -1,82 +1,141 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "./Testimonial.css";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import './Testimonial.css'; // Updated CSS file
 
-const testimonials = [
-  {
-    name: "Harsh P.",
-    role: "Product Designer",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
-    rating: 5,
-    feedback:
-      "I was hesitant to try Pagedone at first, but I'm so glad I did – it's exceeded all of my expectations.",
-  },
-  {
-    name: "Alex K.",
-    role: "Design Lead",
-    img: "https://randomuser.me/api/portraits/men/45.jpg",
-    rating: 5,
-    feedback:
-      "Pagedone stands out as the most user-friendly and effective solution I've ever used.",
-  },
-  {
-    name: "Jane D.",
-    role: "CEO",
-    img: "https://randomuser.me/api/portraits/women/50.jpg",
-    rating: 5,
-    feedback:
-      "Pagedone is simply the best tool of investment in the market right now.",
-  },
-  {
-    name: "Michael T.",
-    role: "Software Engineer",
-    img: "https://randomuser.me/api/portraits/men/20.jpg",
-    rating: 4,
-    feedback:
-      "It's a fantastic platform! I highly recommend it to anyone looking for efficiency.",
-  },
-];
+const Testimonials = () => {
+  const testimonials = [
+    {
+      id: 1,
+      name: 'Swostik Chapagain',
+      position: 'CEO',
+      image: './src/assets/images/about.jpg', // Replace with your image paths
+      rating: 5,
+      description: 'Working with this team was an absolute pleasure. They understood my requirements perfectly and delivered beyond my expectations.',
+      date: 'March 15, 2025'
+    },
+    {
+      id: 2,
+      name: 'Binisha Chapagain',
+      position: 'Flutter Developer',
+      image: './src/assets/images/testimonial2.png', // Replace with your image paths
+      rating: 4,
+      description: 'Very professional service. The final product was exactly what I was looking for, and they were responsive throughout the process.',
+      date: 'February 28, 2025'
+    },
+    {
+      id: 3,
+      name: 'Nabin Poudel',
+      position: 'Software Engineer',
+      image: './src/assets/images/testimonial1.png',
+      rating: 5,
+      description: 'I am extremely satisfied with the results. Their attention to detail and creative approach helped bring my vision to life.',
+      date: 'January 20, 2025'
+    },
+    {
+      id: 4,
+      name: 'Milan Poudel',
+      position: 'Web Developer',
+      image: './src/assets/images/testimonial3.png',
+      rating: 5,
+      description: 'Outstanding work! They exceeded my expectations and delivered the project ahead of schedule. Would definitely work with them again.',
+      date: 'March 5, 2025'
+    },
+    {
+      id: 5,
+      name: 'Sohan Kafle',
+      position:'CEO',
+      image: './src/assets/images/testimonial1.png',
+      rating: 4,
+      description: 'Great communication and exceptional skills. They transformed my ideas into reality with impressive results.',
+      date: 'February 10, 2025'
+    }
+  ];
 
-const Testimonial = () => {
+  // Generate stars based on rating
+  const renderStars = (rating) => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      stars.push(
+        <span key={i} className={`star ${i <= rating ? 'filled' : 'empty'}`}>
+          {i <= rating ? '★' : '☆'}
+        </span>
+      );
+    }
+    return stars;
+  };
+
   return (
-    <section className="testimonial-section" id="testimonial">
-       <h2 className="section__title">What My Clients Say's</h2>
-      <Swiper
-        modules={[Pagination, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        loop={true} // Enables infinite looping
-        breakpoints={{
-          480: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-        className="testimonial-swiper"
-      >
-        {testimonials.map((testimonial, index) => (
-          <SwiperSlide key={index} className="testimonial-card">
-            <div className="rating">
-              {"★".repeat(testimonial.rating)}
-              {"☆".repeat(5 - testimonial.rating)}
-            </div>
-            <p className="feedback">{testimonial.feedback}</p>
-            <div className="user-info">
-              <img src={testimonial.img} alt={testimonial.name} />
-              <div>
-                <h4 className="user-name">{testimonial.name}</h4>
-                <p className="user-role">{testimonial.role}</p>
+    <section className="testimonials-section" id="testimonials">
+      <div className="container">
+        <h1 className="section__title">What My Clients Say's</h1>
+        
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          spaceBetween={30}
+          slidesPerView={1}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={false} // Removed navigation arrows
+          breakpoints={{
+            // When window width is >= 640px
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            // When window width is >= 768px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            // When window width is >= 1024px
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
+          className="testimonials-swiper"
+        >
+          {testimonials.map((testimonial) => (
+            <SwiperSlide key={testimonial.id}>
+              <div className="testimonial-card">
+                <div className="testimonial-header">
+                  <div className="client-image-container">
+                    <img 
+                      src={testimonial.image} 
+                      alt={`${testimonial.name}`} 
+                      className="client-image"
+                    />
+
+
+
+                  </div>
+                  <div className="client-info">
+                    <h3 className="client-name">{testimonial.name}</h3>
+                    <p className="client-position">{testimonial.position}</p>
+                    <div className="client-rating">
+                      {renderStars(testimonial.rating)}
+                    </div>
+                  </div>
+                </div>
+                <div className="testimonial-content">
+                  <p className="testimonial-text">{testimonial.description}</p>
+                  <p className="testimonial-date">{testimonial.date}</p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 };
 
-export default Testimonial;
+export default Testimonials;
