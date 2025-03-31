@@ -5,6 +5,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
+  
     justify-content: center;
     align-items: start; /* Changed from center for better alignment */
   }
@@ -13,6 +14,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
     align-items: center;
     background-color: var(--container-color);
     padding: 1.5rem;

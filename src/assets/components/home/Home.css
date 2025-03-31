@@ -9,6 +9,7 @@
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
+    margin: 0 20px;
 }
 
 .home__social {
@@ -28,7 +29,7 @@
 }
 
 .home__title {
-    font-size: var(--big-font-size);
+    font-size: var(--h1-font-size);
     margin-bottom: var(--mb-0-25);
 }
 

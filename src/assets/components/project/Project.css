@@ -1,0 +1,218 @@
+/* Projects Section Styles */
+.projects-section {
+  color: var(--title-color);
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.projects-container {
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+}
+
+/* Swiper Custom Styles for Centered Effect */
+.projects-swiper {
+  width: 100%;
+  padding: 2rem 0 3rem;
+}
+
+.project-slide {
+  width: 330px;
+  height: 300px;
+  background: transparent;
+  transition: transform 0.3s ease;
+  margin: 0 10px;
+}
+
+/* Project Card Styles - Clean Modern Design */
+.project-card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1; /* Ensure card is above glare effect */
+}
+
+.project-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.project-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  z-index: 1;
+}
+
+.project-title {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: var(--title-color);
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.project-description {
+  color: var(--font-color);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  font-size: 0.6rem;
+  line-height: 1.5;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background-color: var(--title-color);
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.project-links.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: var(--container-color, #f8f9fa);
+  color: var(--title-color, #333);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link-btn:hover { 
+  background-color: black;
+  transform: translateY(-3px);
+  color: white;
+}
+
+.card-glare {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 166, 0, 0.05); /* Made more subtle */
+  filter: blur(15px);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: all 0.8s ease;
+  z-index: 0; /* Place below content */
+}
+
+.project-card:hover .card-glare {
+  transform: translate(200px, 150px);
+  background: rgba(255, 166, 0, 0.1); /* Slightly stronger on hover */
+}
+
+/* Swiper Pagination Customization */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #94a3b8;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 30px;
+  border-radius: 4px;
+  background-color: var(--title-color); /* Match with tag color */
+}
+
+/* Fix for swiper slides that are not active */
+.swiper-slide-prev .project-card,
+.swiper-slide-next .project-card {
+  opacity: 0.7;
+}
+
+.swiper-slide-active .project-card {
+  opacity: 1;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 640px) {
+  .projects-section {
+    padding: 3rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .project-slide {
+    width: 260px;
+    height: 330px;
+  }
+  
+  .project-title {
+    font-size: 1.2rem;
+  }
+  
+  .project-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .project-slide {
+    width: 280px;
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .projects-section {
+    padding: 6rem 0;
+  }
+}
