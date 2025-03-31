@@ -7,7 +7,14 @@ import ScrollDown from './ScrollDown';
 
 
 
+
+
 export const Home = () => {
+
+    
+
+
+
     return (
        <section className="home section" id="home">
         <div className="home__container container grid">
