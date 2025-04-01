@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/arunpandeylaudari2025/',
+  base: '/Portfolio_Arunpandeylaudari.py/', // Use your exact repo name
 });
