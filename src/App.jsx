@@ -8,7 +8,7 @@ import Service from './assets/components/services/Service';
 import Qualification from './assets/components/qualification/Qualification';
 import Testimonial from './assets/components/testimonial/Testimonial';
 import Projects from './assets/components/project/Project';
-import Contact from './assets/components/contact/contact';
+import Contact from './assets/components/contact/Contact';
 
 
  export const App = () => {
