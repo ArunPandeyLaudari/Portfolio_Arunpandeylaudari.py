@@ -16,52 +16,72 @@ const Projects = () => {
   const projectsData = [
     {
       id: 1,
-      title: "E-Commerce Website",
+      title: "E-Commerce Website(Kido Bazar)",
       description: "Full-stack shopping platform with payment integration",
-      tags: ["React", "Node.js", "MongoDB"],
+      tags: ["HTML", "Tailwind CSS", "JavaScript","Swiper JS","Chart JS","Laravel", "MySQL",],
       github: "https://github.com/yourusername/ecommerce",
       demo: "https://your-ecommerce-demo.com",
     },
     {
       id: 2,
-      title: "Weather App",
-      description: "Real-time weather with interactive maps",
-      tags: ["React", "API", "CSS"],
+      title: "Barber Shop Appointment System & e-commerce",
+      description: "Book appointments and shop products online",
+      tags: ["HTML", "Tailwind CSS", "JavaScript","Swiper JS","Chart JS","Laravel", "MySQL",],
       github: "https://github.com/yourusername/weather-app",
       demo: "https://your-weather-app-demo.com",
     },
     {
       id: 3,
-      title: "Task Management System",
-      description: "Collaborative workspace with real-time updates",
-      tags: ["React", "Firebase", "Material UI"],
+      title: "School Website",
+      description: "Information hub for students and parents",
+      tags: ["HTML", "Tailwind CSS", "JavaScript","Swiper JS","Chart JS","Laravel", "MySQL",],
       github: "https://github.com/yourusername/task-manager",
       demo: "https://your-task-app-demo.com",
     },
     {
       id: 4,
-      title: "Personal Blog",
-      description: "Markdown-supported content platform",
-      tags: ["Next.js", "Tailwind", "Prisma"],
+      title: "Portfilo Website",
+      description: "Showcase of my work and skills",
+      tags: ["HTML","CSS","React JS","Swiper JS"],
       github: "https://github.com/yourusername/blog",
       demo: "https://your-blog-demo.com",
     },
     {
       id: 5,
-      title: "Fitness Tracker",
-      description: "Health analytics and workout planner",
-      tags: ["React Native", "Chart.js", "Firebase"],
+      title: "Hands For Change(Donation website)",
+      description: "Connect donors with those in need",
+      tags: ["HTML", "Tailwind CSS", "JavaScript","Swiper JS","Chart JS","Laravel", "MySQL",],
       github: "https://github.com/yourusername/fitness-tracker",
       demo: "https://your-fitness-app-demo.com",
     },
+
     {
       id: 6,
-      title: "AI Image Generator",
-      description: "Create unique art with machine learning",
-      tags: ["React", "OpenAI API", "TailwindCSS"],
+      title: "Event Management System",
+      description: "Manage and organize events seamlessly",
+      tags: ["HTML", "Tailwind CSS", "JavaScript","Swiper JS","Chart JS","Laravel", "MySQL",],
+      github: "https://github.com/yourusername/ai-image-generator",
+      demo: "https://your-ai-app-demo.com",
+    },
+
+    {
+      id: 7,
+      title: "Liquor Store Management System",
+      description: "Manage liquor store operations efficiently",
+      tags: ["HTML", "Tailwind CSS", "JavaScript","Swiper JS","Chart JS","Laravel", "MySQL",],
+      github: "https://github.com/yourusername/ai-image-generator",
+      demo: "https://your-ai-app-demo.com",
+    },
+
+    {
+      id: 8,
+      title: "Library Management System",
+      description: "Manage library resources and users efficiently",
+     tags:['Java','MySQL'],
       github: "https://github.com/yourusername/ai-image-generator",
       demo: "https://your-ai-app-demo.com",
     }
+
   ];
 
   return (
