@@ -4,11 +4,11 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './Testimonial.css'; // Updated CSS file
-import {imga} from '../../images/about.jpg';
-import {imgb} from '../../images/testimonial2.png';
-import {imgc} from '../../images/testimonial1.png';
-import {imgd} from '../../images/testimonial3.png';
-import {imge} from '../../images/testimonial1.png';
+import imga from '../../images/about.jpg';
+import imgb from '../../images/testimonial2.png';
+import imgc from '../../images/testimonial1.png';
+import imgd from '../../images/testimonial3.png';
+import imge from '../../images/testimonial1.png';
 
 
 const Testimonials = () => {
