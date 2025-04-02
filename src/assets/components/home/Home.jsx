@@ -4,7 +4,7 @@ import "./Home.css";
 import Social from './Social';
 import Data from './Data';
 import ScrollDown from './ScrollDown';
-
+import bgimage from '../../images/arunprofile.jpg';
 
 
 
@@ -21,7 +21,15 @@ export const Home = () => {
             <div className="home__content grid">
                 <Social/>
 
-                <div className='home__img'></div>
+                <div className='home__img'
+                
+                style={{
+                    backgroundImage: `url(${bgimage})`,
+                }}
+
+                >
+              
+                </div>
 
                 <Data/>
             </div>
