@@ -1,6 +1,7 @@
 
 .home__container{
     row-gap:7rem ;
+   
 }
 
 
@@ -9,7 +10,7 @@
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 -15px;
 }
 
 .home__social {
@@ -218,6 +219,8 @@
     /* for small screen */
      @media screen and (max-width: 350px) {
       
+
+        
         .home__img{
             width: 180px;
             height: 180px;

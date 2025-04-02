@@ -2,7 +2,7 @@
 .section__title {
     font-size: var(--h2-font-size);
     text-align: center;
-    margin-bottom: var(--mb-2); /* Added spacing for better layout */
+    margin-bottom: 3rem; /* Added spacing for better layout */
 }
 
 
