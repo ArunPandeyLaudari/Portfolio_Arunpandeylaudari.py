@@ -4,6 +4,12 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './Testimonial.css'; // Updated CSS file
+import {imga} from '../../images/about.jpg';
+import {imgb} from '../../images/testimonial2.png';
+import {imgc} from '../../images/testimonial1.png';
+import {imgd} from '../../images/testimonial3.png';
+import {imge} from '../../images/testimonial1.png';
+
 
 const Testimonials = () => {
   const testimonials = [
@@ -11,7 +17,7 @@ const Testimonials = () => {
       id: 1,
       name: 'Swostik Chapagain',
       position: 'CEO',
-      image: './src/assets/images/about.jpg', // Replace with your image paths
+      image: imga, // Replace with your image paths
       rating: 5,
       description: 'Working with this team was an absolute pleasure. They understood my requirements perfectly and delivered beyond my expectations.',
       date: 'March 15, 2025'
@@ -20,7 +26,7 @@ const Testimonials = () => {
       id: 2,
       name: 'Binisha Chapagain',
       position: 'Flutter Developer',
-      image: './src/assets/images/testimonial2.png', // Replace with your image paths
+      image: imgb, // Replace with your image paths
       rating: 4,
       description: 'Very professional service. The final product was exactly what I was looking for, and they were responsive throughout the process.',
       date: 'February 28, 2025'
@@ -29,7 +35,7 @@ const Testimonials = () => {
       id: 3,
       name: 'Nabin Poudel',
       position: 'Software Engineer',
-      image: './src/assets/images/testimonial1.png',
+      image: imgc, // Replace with your image paths
       rating: 5,
       description: 'I am extremely satisfied with the results. Their attention to detail and creative approach helped bring my vision to life.',
       date: 'January 20, 2025'
@@ -38,7 +44,7 @@ const Testimonials = () => {
       id: 4,
       name: 'Milan Poudel',
       position: 'Web Developer',
-      image: './src/assets/images/testimonial3.png',
+      image: imgd, // Replace with your image paths
       rating: 5,
       description: 'Outstanding work! They exceeded my expectations and delivered the project ahead of schedule. Would definitely work with them again.',
       date: 'March 5, 2025'
@@ -47,7 +53,7 @@ const Testimonials = () => {
       id: 5,
       name: 'Sohan Kafle',
       position:'CEO',
-      image: './src/assets/images/testimonial1.png',
+      image: imge, // Replace with your image paths
       rating: 4,
       description: 'Great communication and exceptional skills. They transformed my ideas into reality with impressive results.',
       date: 'February 10, 2025'
